@@ -1,0 +1,52 @@
+ 
+<link rel="stylesheet" href="styles.css" type="text/css">
+<p><img src="images/novikorisnik.gif" width="200" height="20" /></p>
+<table width="80%" border="0" align="center" cellpadding="1" cellspacing="0" bgcolor="#D3D9E6" class="tb-bdr">
+  <tr> 
+    <td><table width="100%" border="0" cellpadding="5" cellspacing="0" class="tb-bg">
+        <tr class="tbFORMA"> 
+          <td><form name="form1" action="index.php?cont=store_kontakti" method="post">
+              <p align="center" class="title3"><font color="#FF0000">{ERROR}</font></p>
+              <table border="0" align="center" cellpadding="2" cellspacing="2">
+                              <tr> 
+                  <td nowrap class="PARAnormal"><div align="right"><font color="#FF0000">*</font> Username: </div></td>
+                  <td class="normal"><input name="username" type="text" class="normal" id="username" value="{USERNAME}" size="20" maxlength="20"> </td>
+                </tr>
+
+                <tr> <td nowrap class="PARAnormal"><div align="right"><font color="#FF0000">*</font> Full name:</div></td>
+                       <td class="normal"><input name="fullname" type="text" class="normal" id="fullname" value="{FULLNAME}" size="20" maxlength="20"> </td>
+                </tr>
+               <tr> 
+                  <td nowrap class="PARAnormal"><div align="right"><font color="#FF0000">*</font> Email: </div></td>
+                  <td class="normal"><input name="email" type="text" class="normal" id="email" value="{EMAIL}" size="20" maxlength="20"></td>
+                </tr>
+               <tr> 
+                  <td nowrap class="PARAnormal"><div align="right"><font color="#FF0000">*</font> Password: </div></td>
+                  <td class="normal"><input name="password" type="text" class="normal" id="password" value="{PASSWORD}" size="20" maxlength="20"></td>
+                </tr>
+                
+
+              </table>
+              <p align="center" class="normal"> Polja markirana <font color="#FF0000">*</font> 
+              su obavezna!</p>
+              <p align="center" class="normal"> 
+                <input class="DUGbuttoninput" name="adduser" type="submit" id="adduser" value="Potvrdi">
+                <SCRIPT type=text/javascript><!--
+focusField("username");
+function focusField(name) {
+  for(var i = 0; i < document.forms.length; ++i) {
+    var obj = document.forms[i].elements[name];
+    if (obj) {
+      if (obj.length) { obj = obj[0]; }
+      if (obj.focus) { obj.focus(); }
+    }
+  }
+} 
+//--> </SCRIPT>
+              </p>
+            </form></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<br>

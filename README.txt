@@ -1,0 +1,1 @@
+In db.conf put your Mysql database parameters and load sql.txt file. Working version of this site is on link: http://kliker.com.ba/bicom/kontaktphp/

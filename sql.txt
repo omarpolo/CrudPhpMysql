@@ -1,0 +1,44 @@
+CREATE DATABASE  `bicomtask` ;
+
+
+CREATE TABLE IF NOT EXISTS `dbusers` (
+  `username` varchar(16) NOT NULL DEFAULT '',
+  `password` varchar(16) NOT NULL DEFAULT '',
+  `realname` varchar(30) NOT NULL DEFAULT '',
+  `phone` varchar(15) NOT NULL DEFAULT '',
+  `address` varchar(30) NOT NULL DEFAULT '',
+  `city` varchar(15) NOT NULL DEFAULT '',
+  `zip` varchar(8) NOT NULL DEFAULT '',
+  `comment` varchar(50) NOT NULL DEFAULT ''
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Izbacivanje podataka za tablicu `dbusers`
+--
+
+INSERT INTO `dbusers` (`username`, `password`, `realname`, `phone`, `address`, `city`, `zip`, `comment`) VALUES
+('admin', 'admin', '', '', '', '', '', 'Superuser'),
+('user', 'user', '', '', '', '', '', 'User');
+
+
+
+CREATE TABLE IF NOT EXISTS `kontakti` (
+  `username` varchar(200) CHARACTER SET latin2 COLLATE latin2_croatian_ci NOT NULL,
+  `fullname` varchar(200) NOT NULL,
+  `email` varchar(200) CHARACTER SET latin2 COLLATE latin2_croatian_ci NOT NULL,
+  `password` varchar(200) NOT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Izbacivanje podataka za tablicu `kontakti`
+--
+
+INSERT INTO `kontakti` (`username`, `fullname`, `email`, `password`) VALUES
+('omarhukic', 'omar hukic', 'omarhukic@gmail.com', 'omarpass'),
+('mrnjau', 'mirna hukic', 'a@b.c', 'abc'),
+('nikolakojo', 'nikola kojo', 'nk@hotmail.com', 'nidjo21'),
+('nedzad45', 'nedzad prezimerrr', 'necko@nekimail.com', 'mmm'),
+('polo', 'polo tuzla', 'polo@rodos.pl', '321654'),
+('trikoder', 'petar pan', 'pan@heineken.nl', '789'),
+('alibaba', 'ali ibn baba', 'alibaba@hayduk.com', '777888');

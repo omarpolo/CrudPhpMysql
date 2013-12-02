@@ -1,0 +1,43 @@
+ 
+<link rel="stylesheet" href="styles.css" type="text/css">
+<p><img src="images/izmjenakorisnika.gif" width="200" height="20"> </p>
+<table width="80%" border="0" align="center" cellpadding="1" cellspacing="0"  class="tb-bdr">
+  <tr> 
+    <td><table width="100%" border="0" cellpadding="5" cellspacing="0" class="tb-bg">
+        <tr  class="tbFORMA"> 
+          <td><form name="form1" action="index.php?cont=update_kontakti&username={USERNAME}" method="post">
+              <p align="center" class="title3"><font color="#FF0000">{ERROR}</font></p>
+              <table border="0" align="center" cellpadding="2" cellspacing="2">
+                <tr> 
+                  <td nowrap class="PARAnormal"><div align="right">  Username: </div></td>
+                  <td class="PARAnormal"><strong>{USERNAME}</strong></td>
+                </tr>
+
+                                <tr> 
+                  <td nowrap class="PARAnormal"><div align="right"><font color="#FF0000">*</font> 
+                      Full name:</div></td>
+                  <td colspan="2" class="normal"><input name="fullname" type="text" class="normal" id="fullname" value="{FULLNAME}" maxlength="30" size="30"></td>
+                     
+                </tr>
+                <tr> 
+                  <td nowrap class="PARAnormal"><div align="right"><font color="#FF0000">*</font>Email:</div></td>
+                  <td colspan="2" class="normal"><input name="email" type="text" class="normal" id="email" value="{EMAIL}" maxlength="30" size="30"></td>
+                </tr>
+                <tr> 
+                  <td nowrap class="PARAnormal"><div align="right"><font color="#FF0000">*</font>Password:</div></td>
+                  <td colspan="2" class="normal"><input name="password" type="text" class="normal" id="password" value="{PASSWORD}" maxlength="30" size="30"></td>
+                </tr>
+              </table>
+              <p align="center" class="normal"> Polja naglašena sa <font color="#FF0000">*</font> 
+                su obavezna!</p>
+              <p align="center" class="normal"> 
+                <input class="DUGbuttoninput" type="submit" name="Submit" value="Spremi izmjene">
+              </p>
+            </form></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<p align="center" class="normal"> [<a href="index.php?cont=ask_del_kontakti&username={USERNAME}">Delete user</a>] <br>
+  <br>
+</p>

@@ -1,0 +1,89 @@
+<link href="styles.css" rel="stylesheet" type="text/css"> 
+<img src="images/pretragakorisnika.gif" width="200" height="20">
+<table width="100%" border="0" cellspacing="0" cellpadding="1" class="tb-bdr">
+ <tr > 
+    <td ><table width="100%" border="0" cellpadding="5" cellspacing="0" class="tb-bg">
+        <tr class="tbFORMA"> 
+          <td><form name="form1" action="index.php?cont=list_kontakti" method="post">
+              <br>
+              <table border="0" align="center" cellpadding="2" cellspacing="2">
+              
+                              <tr> 
+                  <td nowrap class="PARAnormal"><div align="right"> Full name: </div></td>
+                  <td class="normal"><input name="fullname" type="text" class="normal" id="fullname" size="20" maxlength="20"></td>
+                </tr>
+                <tr> 
+                  <td nowrap class="PARAnormal"><div align="right"> Username: </div></td>
+                  <td class="normal"><input name="username" type="text" class="normal" id="username" size="20" maxlength="20"></td>
+                </tr>
+               <tr> 
+                  <td nowrap class="PARAnormal"><div align="right">Email: </div></td>
+                  <td class="normal"><input name="email" type="text" class="normal" id="email" size="20" maxlength="20"></td>
+                </tr>
+
+              </table>
+              <p align="center" class="normal"> 
+                <input class="DUGbuttoninput" type="submit" name="Submit" value="Pretraga">
+                <SCRIPT type=text/javascript><!--
+focusField("mac");
+function focusField(name) {
+  for(var i = 0; i < document.forms.length; ++i) {
+    var obj = document.forms[i].elements[name];
+    if (obj) {
+      if (obj.length) { obj = obj[0]; }
+      if (obj.focus) { obj.focus(); }
+    }
+  }
+} 
+//--> </SCRIPT>
+              </p>
+            </form></td>
+        </tr>
+      </table></td>
+  </tr>
+  </table>
+<table width="100%" border="0" cellspacing="0" cellpadding="1">
+ 
+  <tr> 
+    <td class="normal" colspan="2">{PREV}</td>
+    <td class="normal" width="100"> <div align="center"></div></td>
+    <td class="normal"> <div align="right">{NEXT}</div></td>
+  </tr>
+  <tr> 
+    <td colspan="4"> 
+    <TABLE cellSpacing=0 cellPadding=2 
+            width="100%"  border=1
+            valign="top">
+        <TBODY>
+          <TR class="tbHEAD"> 
+            <th width="30" height="20" class="tb-header"><div align="center">#</div></th>
+            <th width="30" class="tb-header"><div align="center">#</div></th>
+            <th width="100" class="tb-header"><div align="center">Username</div></th>
+            <th width="200" class="tb-header"><div align="center">Full name</div></th>
+            <th width="200" class="tb-header"><div align="center">Email</div></th>
+            <th width="100" class="tb-header"><div align="center">Password</div></th>
+            
+          </TR>
+        </TBODY>
+      </TABLE>
+      {KONTAKTI} 
+      <TABLE cellSpacing=0 cellPadding=3 
+            width="100%" border=0 
+            valign="top">
+        <TBODY>
+
+        </TBODY>
+      </TABLE></td>
+  </tr>
+  <tr> 
+    <td class="normal" colspan="2">{PREV}</td>
+    <td class="normal" width="100"> <div align="center"></div></td>
+    <td class="normal"> <div align="right">{NEXT}</div></td>
+  </tr>
+  <tr> 
+    <td width="360" height="5"></td>
+    <td width="150" colspan="-2"><img height="1" width="100" src="images/spacer.gif"></td>
+    <td><img height="1" width="530" src="images/spacer.gif"></td>
+    <td><img height="1" width="100" src="images/spacer.gif"></td>
+  </tr>
+</table>
